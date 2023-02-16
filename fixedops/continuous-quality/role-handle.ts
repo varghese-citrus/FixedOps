@@ -11,7 +11,7 @@ const logger = startLogger();
 //   safe: true,
 // });
 
-const env = process.env;
+const env = Deno.env.toObject();
 
 function switchController() {
   let value: any;
