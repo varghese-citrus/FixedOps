@@ -7,7 +7,7 @@ const siteId = Deno.env.get("FOPC_SITE_ID");
 const logger = startLogger();
 
 const env = config({
-  path: "../.env",
+  path: "../.env" || "process.env",
   safe: true,
 });
 
